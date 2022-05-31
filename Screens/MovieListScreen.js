@@ -34,7 +34,7 @@ const MovieListScreen = ({navigation})=>{
       isLoading ? <Text style={{color:"#fff"}}>Loading...</Text> : (
         <View>
         <Button
-      title="Go to Detail Screen"
+      title="To The Detail Screen"
       onPress={() =>
         navigation.navigate('MovieDetailsScreen', { name: 'Jane' })
       }
@@ -64,7 +64,7 @@ const MovieListScreen = ({navigation})=>{
                 <Text style={{color:"#fff"}}>{item.release_date}</Text>
               </View>
               <View style={{flexDirection:"row"}}>
-                <Text style={{fontWeight:"bold", color:"#fff"}}>Popularity: </Text>
+                <Text style={{fontWeight:"bold", color:"#fff"}}>Popularities: </Text>
                 <Text style={{color:"#fff"}}>{item.popularity}</Text>
               </View>
             </View>
